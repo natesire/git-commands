@@ -1,0 +1,2 @@
+#!/bin/bash
+git log --all --grep="$1" --pretty=format:"%h %an %ad %s" --date=short

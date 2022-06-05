@@ -1,6 +1,11 @@
-# git-commands
-Shortcuts to Git Commands
+# Search Git Logs For
 
-## Delete Untracked Files
+1. solutions to errors
 
-git clean -f
+2. git custom commands
+
+3. code boilerplate
+
+# Setup for Windows on Ubuntu Subsystem
+
+export PATH=$PATH:/mnt/c/pro/github/git-commands
