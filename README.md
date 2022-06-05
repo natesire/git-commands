@@ -9,3 +9,7 @@
 # Setup for Windows on Ubuntu Subsystem
 
 export PATH=$PATH:/mnt/c/pro/github/git-commands
+
+# References
+
+https://gitbetter.substack.com/p/automate-repetitive-tasks-with-custom?s=r
