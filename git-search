@@ -1,2 +1,12 @@
-#!/bin/bash
-git log --all --grep="$1" --pretty=format:"%h %an %ad %s" --date=short
+#!/usr/bin/env node
+var exec = require('child_process').exec;
+
+// parse command line arguments
+var searchArg = process.argv[2];
+
+let cmdGitLog = `git log --pretty=format:"%H %s" | grep ${searchArg}`;
+console.log(cmdGitLog);
+
+exec(cmdGitLog, function(error, stdout, stderr) {
+  console.log(stdout);
+});
