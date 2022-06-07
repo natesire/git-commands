@@ -29,15 +29,7 @@ export default class GitLogSearch {
       : '';
   }
 
-  // run shell command
-  public runShellCommand(command: string) {
-    return exec(command); // why can vscode show me this function signature but complains not found ?
-  }
-
-  public shellExec(command: string) {
-    //'git log --all --pretty=format:"%H %s" | grep -m100 "$1"';
-    //git log --all --pretty=format:"%H %s" | grep -m100 "$1"';
-  }
+  
 
   public getSearchTermRegex(): RegExp {
     return this.searchTermRegex;
