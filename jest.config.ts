@@ -1,9 +1,12 @@
 /*
- * For a detailed explanation regarding each configuration property, visit:
+ * For a detailed explanation regarding each configuration property and type check, visit:
  * https://jestjs.io/docs/configuration
  */
 
-module.exports = {
+// SOLVE: Cannot use import statement outside a module
+// jest --init
+// pick typescript for config
+export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -14,7 +17,7 @@ module.exports = {
   // cacheDirectory: "C:\\Users\\nate.sire\\AppData\\Local\\Temp\\jest",
 
   // Automatically clear mock calls, instances, contexts and results before every test
-  clearMocks: true,
+  // clearMocks: false,
 
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
