@@ -29,8 +29,8 @@ export default class GitLogSearch {
       : '';
   }
 
-  //run shell command
-  public runShellCommand(command: string): string {
+  // run shell command
+  public runShellCommand(command: string) {
     return exec(command); // why can vscode show me this function signature but complains not found ?
   }
 

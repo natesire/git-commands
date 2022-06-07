@@ -1,3 +1,4 @@
+import { exec } from 'child_process';
 export default class GitLogSearch {
     constructor(gitLog, searchTerm, searchTermCaseSensitive = false) {
         this.gitLog = gitLog;
@@ -14,8 +15,13 @@ export default class GitLogSearch {
             ? 'i'
             : '';
     }
+    // run shell command
+    runShellCommand(command) {
+        return exec(command); // why can vscode show me this function signature but complains not found ?
+    }
     shellExec(command) {
-        'git log --all --pretty=format:"%H %s" | grep -m5 "$1"';
+        //'git log --all --pretty=format:"%H %s" | grep -m100 "$1"';
+        //git log --all --pretty=format:"%H %s" | grep -m100 "$1"';
     }
     getSearchTermRegex() {
         return this.searchTermRegex;
