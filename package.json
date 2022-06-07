@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "devDependencies": {
     "@types/jest": "^28.1.1",
     "jest": "^28.1.0",
@@ -7,7 +6,6 @@
   },
   "scripts": {
     "build": "rimraf ./dist && tsc --outDir dist",
-    "test": "tsc-watch --compiler typescript/bin/tsc --onSuccess \"cross-env NODE_OPTIONS=--experimental-vm-modules jest --config ./jest.config.js --coverage && rimraf ./dist\"",
-    "test-once": "jest"
+    "test": "tsc-watch --compiler typescript/bin/tsc --onSuccess \"cross-env NODE_OPTIONS=--experimental-vm-modules jest --config ./jest.config.js --coverage && rimraf ./dist\""
   }
 }

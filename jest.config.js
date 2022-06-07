@@ -1,12 +1,9 @@
 /*
- * For a detailed explanation regarding each configuration property and type check, visit:
+ * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
 
-// SOLVE: Cannot use import statement outside a module
-// jest --init
-// pick typescript for config
-export default {
+module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
