@@ -1,6 +1,8 @@
 # Search Git Logs For
 
-solutions to errors, custom commands, code boilerplate
+solutions to errors, custom commands, code boilerplate.
+
+```git search helloworld``` from any git repo
 
 # Run the Project
 
